@@ -1,0 +1,115 @@
+﻿html, body {
+    height: 100%;
+    min-height: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    margin: 0% 5%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.menu-items,
+.transaction-items {
+    width: 400px;
+    height: 430px;
+    padding: 3%;
+    color: #000;
+    font-size: larger;
+}
+
+.menu-items {
+    margin: 1em 1.5em 1em .1em;
+    background-color: #ff8861;
+}
+
+.transaction-items {
+    margin: 1em .1em 1em 1.5em;
+    font-family: 'Courier New';
+    font-weight: 800;
+    background-color: #f7f7f7;
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+#header,
+#main-window,
+#side-nav,
+#footer {
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    margin-bottom: 10px;
+    height: 10px;
+    font-family:'MS Gothic';
+    padding-left: 20%;
+}
+
+
+#main-window {
+    background-color: #ff7750;
+    color: #ecf0f1;
+    margin-left: .5%;
+    flex-grow: 1.5;
+    flex-shrink: 1.5;
+    flex-direction: column;
+}
+
+
+#side-nav {
+    display: block;
+    order: -1;
+    background-color: #00779f;
+    color: #ecf0f1;
+    flex-basis: 15%;
+}
+
+#footer {
+    margin-top: 10px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    height: 10px;
+}
+
+@media (max-width: 640px) {
+    #main {
+        flex-direction: column;
+    }
+
+    #main-window {
+        margin: 1.5% 0;
+    }
+}
+
+.button {
+    margin-left: 10px;
+    float: right;
+    background-color: #CCFFFF;
+    height: 25px;
+    min-width: 50px;
+    border-radius: 5px;
+}
+
+.label {
+    width: 50%;
+    left: 10px;
+}
+
+.order-number {
+    float: right;
+    margin-bottom: 0px;
+}
